@@ -1,3 +1,4 @@
+from deep_translator import GoogleTranslator
 import os
 import feedparser
 import telegram
