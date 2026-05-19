@@ -1,3 +1,4 @@
+import os
 import feedparser
 import telegram
 import asyncio
@@ -7,8 +8,8 @@ import requests
 from datetime import datetime
 from deep_translator import GoogleTranslator
 
-TOKEN = "8881160163:AAH2QHtLKrqdAjJl0UYQ7GYOhW4lCu2bj70"
-CHANNEL_ID = "@crypto_cash_ai"
+TOKEN = os.getenv("TOKEN")
+CHANNEL_ID = os.getenv("CHANNEL_ID")
 
 bot = telegram.Bot(token=TOKEN)
 
